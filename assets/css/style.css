@@ -1,0 +1,423 @@
+.dropdown-contenido a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-contenido {
+  left: 50% !important;
+  right: auto !important;
+  text-align: center !important;
+  transform: translate(-50%, 0) !important;
+
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.show {display:block;}
+
+i div a{
+  font-size: medium;
+  text-align: center;
+  padding: auto;
+}
+
+.menu-dropdown{
+  left: 50% !important;
+  right: auto !important;
+  text-align: center !important;
+  transform: translate(-50%, 0) !important;
+
+  display: none;
+  position: absolute;
+}
+
+
+.overlay { 
+  color:#fff;
+  position:absolute;
+  z-index:12;
+
+
+  text-align:center;
+}
+.carousel-control-prev {
+  z-index: 12;
+}
+.carousel-control-next {
+  z-index: 12;
+}
+
+
+
+/***** General *****/
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #444444;
+}
+
+a {
+  color: #34b7a7;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #51cdbe;
+  text-decoration: none;
+}
+.active a {
+  color: #51cdbe;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif;
+}
+
+#main {
+  margin-top: 50px;
+}
+@media (max-width: 992px) {
+  #main {
+    margin-top: 30px;
+  }
+}
+
+
+
+
+
+/***** Redes sociales *****/
+.redes-sociales {
+  padding-right: 15px;
+}
+.redes-sociales a {
+  color: #6f6f6f;
+  padding-left: 6px;
+  display: inline-block;
+  line-height: 0px;
+  transition: 0.3s;
+  font-size: 16px;
+}
+.redes-sociales a:hover {
+  color: #34b7a7;
+}
+
+
+
+
+#header {
+  background: #e9e8e6;
+  box-shadow: 0px 0px 25px 0 rgba(0, 0, 0, 0.08);
+  z-index: 997;
+  padding: 15px 0;
+}
+#header .logo {
+  font-size: 32px;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+#header .logo a {
+  color: #222222;
+}
+
+@media (max-width: 992px) {
+  #header .logo {
+    font-size: 28px;
+  }
+}
+
+/***** Navar *****/
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+.navbar li {
+  position: relative;
+  padding: 10px 0 10px 28px;
+}
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  color: #888888;
+  white-space: nowrap;
+  transition: 0.3s;
+  position: relative;
+}
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+.navbar > ul > li > a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #34b7a7;
+  visibility: hidden;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+.navbar a:hover:before, .navbar li:hover > a:before, .navbar .active:before {
+  visibility: visible;
+  width: 25px;
+}
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #222222;
+}
+
+
+
+/***** CSS icono del menu *****/
+.mobile-nav-toggle {
+  color: #222222;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+
+
+}
+.mobile-nav-toggle:hover {
+  color: #34b7a7;
+}
+
+/***** Css para el menu vista movil *****/
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+
+
+
+
+/***** CSS para el apartado de persona *****/
+#carrusel .img-escritorio {
+  display: block;
+}
+#carrusel .img-movil {
+  display: none;
+}
+
+#carrusel h1 {
+  margin: 0;
+
+  font-weight: 700;
+  line-height: 56px;
+  color: #ffffff;
+  text-shadow: black 0px 0px 1vw;
+}
+#carrusel h2 {
+  color: #ffffff;
+  margin: 0.5vw 0 0 0;
+  padding-bottom: 10px;
+  text-shadow: black 0px 0px 0.5vw;
+}
+@media (max-width: 992px) {
+  
+  #carrusel h2 {
+    font-size: 5vw;
+  }
+}
+
+#carrusel .btn-info {
+  margin: 0.5vw 0 0 0;
+
+  color: #fff;
+  background: #34b7a7;
+}
+#carrusel .btn-info:hover {
+  background: #3dc8b7;
+}
+
+@media (min-width: 1024px) {
+  #persona {
+    background-attachment: fixed;
+  }
+}
+@media (max-width: 991px) {
+  #persona:before {
+    content: "";
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  #persona h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #persona h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+/***** Seccion general *****/
+section {
+  padding: 60px 0;
+}
+
+.section-bg {
+  background-color: #e7f8f6;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+}
+.section-title h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #34b7a7;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+.section-title p {
+  margin-bottom: 0;
+}
+
+/***** Boton arriba *****/
+
+.botonArriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+.botonArriba:focus {
+  box-shadow: none;
+}
+
+.bi-arrow-up-circle {
+  font-size: x-large;
+  background-color: transparent;
+}
+
+.bi-arrow-up-circle:hover {
+  color: #34b7a7;
+}
+
+
+
+
+
+/***** Formulario *****/
+
+#formulario .btn-info {
+  margin: 0.5vw 0 0 0;
+  color: #fff;
+  background: #34b7a7;
+}
+#formulario .btn-info:hover {
+  background: #3dc8b7;
+}
+
+
+
+
+
+/***** Contacto *****/
+
+#contacto .presentacion {
+  padding: 50px;
+
+}
+#contacto .presentacion h2 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: relative;
+  border-bottom: 2px solid #34b7a7;
+  padding-bottom: 5px;
+}
+
+
+
+
+@media (max-width: 991px) {
+  #contacto .presentacion {
+    padding: 20px;
+  }
+}
+
+#contacto .informacion i{
+  font-size: 20px;
+  color: #34b7a7;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #effbf9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+
+#contacto .informacion h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #222222;
+}
+#contacto .informacion p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #555555;
+}
+
+#contacto .imagenMia{
+  border-radius: 50%;
+  height: auto;
+
+  
+  
+}
+@media (max-width: 991px) {
+  #contacto .imagenMia{
+    margin-top: 20px;
+    max-width: 100%;
+
+  }
+}
+
+
+
+
+

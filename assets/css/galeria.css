@@ -1,0 +1,45 @@
+body {
+    background-color: #ffffff;
+    padding: 20px;
+    font-family: Arial;
+}
+
+
+.main {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+
+.fotografia {
+    /*Escoder fotos con esta clase*/
+    display: none;
+}
+
+
+
+
+.content {
+    background-color: white;
+    padding: 10px;
+}
+
+
+.mostrar {
+    /*Enseñar fotos con esta clase*/
+    display: block;
+}
+
+
+.btn {
+    color: #fff;
+    background: #34b7a7;
+}
+
+
+.btn:hover {
+    background: #3dc8b7;
+}
+
+
