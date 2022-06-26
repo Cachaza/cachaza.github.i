@@ -6,7 +6,7 @@ function menu() {
 
 window.onclick = function (event) {
   if (!event.target.matches('.menu-dropdown')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var dropdowns = document.getElementsByClassName("dropdown-contenido");
     var i;
     for (i = 0; i < dropdowns.length; i++) {
       var openDropdown = dropdowns[i];
